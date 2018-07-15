@@ -1,0 +1,270 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	height: 100vh;
+}
+
+body {
+	font-family: 'Roboto', Arial, Helvetica Neue, sans-serif;
+	font-size: 15px;
+}
+
+
+input[type=url] {
+    height:27px; 
+    line-height:27px;
+    text-indent:10px; 
+    font-family:arial, sans-serif; 
+    font-size:1em; 
+    color:#333; 
+    background: #fff; 
+    border:solid 1px #d9d9d9; 
+    border-top:solid 1px #c0c0c0; 
+    border-right:none;
+    border-radius: 2px;
+}
+
+label {
+	margin-right: 10px;
+}
+
+label:hover {
+	cursor: pointer;
+}
+
+header {
+	width: 100%;
+	text-align: center;
+	color: #DFDFDF;
+	background: none;
+	padding-top: 65px;
+}
+
+header h1 {
+	font-family: 'Open Sans', Arial, Helvetica Neue, sans-serif;
+	width: 100%;
+	font-size: 25px;
+	text-transform: uppercase;
+	line-height: 0.8;
+	letter-spacing: 3px;
+	font-weight: 300;
+}
+
+.row {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.row-medium {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.row-large {
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+.fa-twitter {
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+}
+
+.fa-twitter:hover {
+	color: #fff;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#credits {
+	text-align: center;
+	color: white;
+	font-size: 13px;
+}
+
+#container {
+	min-width: 100%;
+	min-height: 100%;
+	text-align: center;	
+	background: linear-gradient(230deg, #a24bcf, #4b79cf, #4bc5cf);
+	background-size: 300% 300%;
+	-webkit-animation: MoveBG 60s ease infinite;
+	-moz-animation: MoveBG 60s ease infinite;
+	-o-animation: MoveBG 60s ease infinite;
+	animation: MoveBG 60s ease infinite;
+	position: absolute;
+}
+
+
+#main {	
+	min-width: 100%;
+	min-height: 100%; 
+	outline: none;
+	color: #00000;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+
+}
+
+#inputs {
+	text-align: left;
+	position: relative;
+	min-height: 440px;
+	font-size: 14px;
+	vertical-align: top;
+	display: inline-block;
+	color: #555;
+	width: 230px;
+}
+
+#name, #speed {
+	width: 100%;
+}
+
+.ui-anglepicker, .ui-slider {
+	margin-top: 10px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	border: 1px solid #aaa;
+}
+.angle-container {
+	text-align: center;
+	display: inline-block;
+	width: 110px;
+}
+
+#error {
+	color: #B32321;
+	border-color: #eed3d7;
+	display: none;
+	margin-top: 30px;
+}
+
+.social {
+	margin-top: 60px;
+}
+
+.social .twitter {
+	position: absolute; 
+	bottom: 0; 
+	left: 0;
+	float: left;
+	height: 20px;
+}
+
+.social .facebook {
+	position: absolute; 
+	bottom: 0; 
+	right: 0;
+	float: right;
+	height: 20px;
+}
+
+.small-show {
+	display: none;
+	margin: 30px 00px 0px 0px;
+}
+
+
+/* borders */
+
+#top, #bottom, #left, #right {
+	background: #fff;
+	position: fixed;
+}
+#left, #right {
+	top: 10px; bottom: 10px;
+	width: 10px;
+}
+#left { 
+	left: 10px; 
+}
+#right { 
+	right: 10px; 
+}
+		
+#top, #bottom {
+	left: 10px; right: 10px;
+	height: 10px;
+}
+#top { 
+	top: 10px; 
+}
+#bottom { 
+	bottom: 10px; 
+}
+
+/* Hide some stuff for small devices */
+
+@media (max-width: 1280px) {
+	header {
+		padding-top: 30px;
+	}
+	header h1 {
+		font-size: 20px;
+	}
+	#main {	
+		margin-top: 20px;
+	}
+	#inputs, .button {
+		font-size: 13px;
+	}
+	#credits, #results {	
+		font-size: 12px;
+	}
+}
+
+@media(max-width:900px){
+	#main {	
+		width: 240px;
+	}
+	.small-hide {
+		display: none !important;
+	}
+	.small-show {
+		display: block;
+	}
+	#inputs {
+		min-height: 0;
+		width: 100%;
+	}
+	.angle-container {
+		width: 115px;
+	}
+	#angle-div {
+		margin-top: 0px;
+	}
+}
+
+/* Keyframes Animasi */
+
+@-webkit-keyframes MoveBG {
+    0%{background-position:0% 84%}
+    50%{background-position:100% 16%}
+    100%{background-position:0% 84%}
+}
+
+@-moz-keyframes MoveBG {
+    0%{background-position:0% 84%}
+    50%{background-position:100% 16%}
+    100%{background-position:0% 84%}
+}
+@-o-keyframes MoveBG {
+    0%{background-position:0% 84%}
+    50%{background-position:100% 16%}
+    100%{background-position:0% 84%}
+}
+@keyframes MoveBG { 
+    0%{background-position:0% 84%}
+    50%{background-position:100% 16%}
+    100%{background-position:0% 84%}
+}

@@ -1,0 +1,43 @@
+body, input{
+	font: 0.9em Tahoma, sans-serif;
+}
+input{
+	padding: 10px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	margin: 0;
+}
+input[type="url"]{
+	width: 50%;
+	position: center;
+	padding: 12px 20px;
+    margin: 1px 0;
+    box-sizing: border-box;
+	border: 3px solid #0000;
+	background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding-left: 5px;
+	-webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+    width: 100%;
+}
+hr {
+	margin: 30px 90px;
+}
+hr.style {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.0), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.0), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.0), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.0), rgba(0,0,0,0));
+}
+div.footer {
+	 margin-top: 70px;
+	 position: center;
+	 color: white;
+	 padding: 10px;
+	 text-align: center;
+}	
